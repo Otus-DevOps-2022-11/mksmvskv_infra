@@ -13,11 +13,15 @@ ssh -J appuser@158.160.47.145 appuser@10.128.0.17
 ## server bastion (proxyjump)
 host bastion
 user appuser
-hostname 158.160.47.145
+hostname 84.201.156.246
 IdentityFile ~/.ssh/appuser
 
 ## server someinternalhost
 host someinternalhost
 user appuser
 hostname 10.128.0.17
-proxyjump bastion
+proxyjump bastio
+
+# ip адреса серверов
+bastion_IP = 84.201.156.246
+someinternalhost_IP = 10.128.0.21
