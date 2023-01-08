@@ -26,7 +26,7 @@ proxyjump bastio
 bastion_IP = 84.201.156.246
 someinternalhost_IP = 10.128.0.21
 
-### ip адрес и порт приложения
+### ip адрес и порт приложения!
 
 testapp_IP = 158.160.45.10
 testapp_port = 9292
