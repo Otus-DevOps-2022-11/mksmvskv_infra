@@ -1,2 +1,2 @@
-packer/scripts/key.json
-packer/variables.json
+./packer/scripts/key.json
+./packer/variables.json
