@@ -1,5 +1,5 @@
 {
-    "key_path": "/home/user/keychik.json",
+    "key_path": "key_example.json",
     "folder_id": "folder_id",
     "source_image_family": "ubuntu-1604-lts",
     "image_name": "reddit-full-{{timestamp}}",
