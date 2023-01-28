@@ -4,16 +4,16 @@ terraform {
       source = "yandex-cloud/yandex"
     }
   }
-  #required_version = ">= 0.13"
+  required_version = ">= 0.13"
 }
 
-provider "yandex" {
-  #service_account_key_file = "key2.json"
-  token  = var.token
-  cloud_id  = var.cloud_id
-  folder_id = var.folder_id
-  zone      = var.zone
-}
+# provider "yandex" {
+#   #service_account_key_file = "key2.json"
+#   token  = var.token
+#   cloud_id  = var.cloud_id
+#   folder_id = var.folder_id
+#   zone      = var.zone
+# }
 
 resource "yandex_compute_instance" "app" {
   name = "reddit-app"
