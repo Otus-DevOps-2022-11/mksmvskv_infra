@@ -1,0 +1,8 @@
+token = "y0_AgAAAAARN"
+cloud_id = "cloud_id8"
+folder_id = "folder_id2"
+zone = "ru-central1-a"
+image_id = "image_idn"
+subnet_id = "subnet_idbug"
+public_key_path = "/home/user/.ssh/appuser.pub"
+privat_key_path = "/home/user/.ssh/appuser"
