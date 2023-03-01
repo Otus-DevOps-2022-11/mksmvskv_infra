@@ -9,3 +9,4 @@ variables.json
 terraform\authorized_key.json
 authorized_key.json
 key.json
+.terraform.lock.hcl
