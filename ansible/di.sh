@@ -1,3 +1,3 @@
 #!/bin/bash
-yc compute instances list | grep reddit | awk '{gsub("reddit-", "", $4); print "["$4"]\n"$4"server"" ""ansible_host="$10}' > inventory
-ansible-inventory -i inventory --list > inventory.json
+yc compute instances list | tail -n +4 | head -n -2 | awk -F '|' '{print "["$3"]\n" "ansible_host="$6}'| tr -d '[:blank:]'
+python di_python.py
