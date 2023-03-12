@@ -1,0 +1,22 @@
+---
+- name: Install Ruby && Bundler
+  hosts: all
+  become: true
+  tasks:
+  # Установим в цикле все зависимости
+  - name: Update apt
+    become: true
+    apt:
+      upgrade: yes
+      update_cache: yes
+  - name: Remove apt lock file
+    file:
+      state: absent
+      path: "/var/lib/dpkg/lock"
+
+  - name: Install ruby and rubygems and required packages
+    apt: "name={{ item }} state=present"
+    with_items:
+      - ruby-full
+      - ruby-bundler
+      - build-essential
