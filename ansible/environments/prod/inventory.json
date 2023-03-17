@@ -2,10 +2,10 @@
     "all": {
         "hosts": {
             "db": {
-                "ansible_host": "158.160.52.155"
+                "ansible_host": "51.250.0.77"
             },
             "app": {
-                "ansible_host": "158.160.46.17"
+                "ansible_host": "51.250.73.230"
             }
         }
     }

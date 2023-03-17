@@ -11,3 +11,5 @@ authorized_key.json
 key.json
 .terraform.lock.hcl
 *.retry
+jdauphant.nginx
+vault.key
